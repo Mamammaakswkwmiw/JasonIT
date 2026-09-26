@@ -53,7 +53,7 @@
             <span>4 weeks</span>
             <span>Beginner-friendly</span>
           </div>
-          <button class="button primary" onclick="openCourse('html-css')">Start course</button>
+          <button class="button primary start-course" type="button" data-course="html-css">Start course</button>
         </article>
 
         <!-- JavaScript Basics -->
@@ -77,7 +77,7 @@
             <span>6 weeks</span>
             <span>Interactive lessons</span>
           </div>
-          <button class="button primary" onclick="openCourse('javascript')">Start course</button>
+          <button class="button primary start-course" type="button" data-course="javascript">Start course</button>
         </article>
 
         <!-- Building Websites -->
@@ -102,7 +102,7 @@
             <span>8 weeks</span>
             <span>Real projects</span>
           </div>
-          <button class="button primary" onclick="openCourse('websites')">Start course</button>
+          <button class="button primary start-course" type="button" data-course="websites">Start course</button>
         </article>
 
         <!-- Advanced JavaScript -->
@@ -126,7 +126,7 @@
             <span>6 weeks</span>
             <span>Advanced concepts</span>
           </div>
-          <button class="button primary" onclick="openCourse('advanced-js')">Start course</button>
+          <button class="button primary start-course" type="button" data-course="advanced-js">Start course</button>
         </article>
 
         <!-- React Basics -->
@@ -150,7 +150,7 @@
             <span>8 weeks</span>
             <span>Modern frameworks</span>
           </div>
-          <button class="button primary" onclick="openCourse('react')">Start course</button>
+          <button class="button primary start-course" type="button" data-course="react">Start course</button>
         </article>
 
         <!-- Python Programming -->
@@ -174,7 +174,7 @@
             <span>6 weeks</span>
             <span>Beginner-friendly</span>
           </div>
-          <button class="button primary" onclick="openCourse('python')">Start course</button>
+          <button class="button primary start-course" type="button" data-course="python">Start course</button>
         </article>
       </div>
     </section>
@@ -182,7 +182,7 @@
     <!-- Modal for course content -->
     <div id="courseModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="courseTitle" aria-hidden="true">
       <div class="modal-content" tabindex="-1">
-        <button class="close" type="button" onclick="closeCourse()" aria-label="Close course">&times;</button>
+        <button class="close" type="button" data-close-course aria-label="Close course">&times;</button>
         <div id="courseBody"></div>
       </div>
     </div>

@@ -12,6 +12,12 @@ const modalContent = modal?.querySelector('.modal-content');
 const courseBody = document.querySelector('#courseBody');
 let previousFocus = null;
 
+document.querySelectorAll('.start-course').forEach((button) => {
+  button.addEventListener('click', () => openCourse(button.dataset.course));
+});
+
+document.querySelector('[data-close-course]')?.addEventListener('click', closeCourse);
+
 function openCourse(courseId) {
   const course = courseDetails[courseId];
   if (!course || !modal || !courseBody) return;
