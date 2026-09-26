@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JasonIT Courses - Learn coding and web development.">
+  <title>Courses | JasonIT</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html">Jason<span>IT</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="support.html">Support</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="courses-hero">
+      <div class="container">
+        <p class="eyebrow">Learn by doing</p>
+        <h1>Our courses</h1>
+        <p class="lead">Start with the basics or dive into advanced topics. Every course includes hands-on projects.</p>
+      </div>
+    </section>
+
+    <section class="courses-section container">
+      <div class="courses-grid">
+        <!-- HTML & CSS Basics -->
+        <article class="course-card">
+          <div class="course-header">
+            <h2>HTML & CSS Fundamentals</h2>
+            <span class="level beginner">Beginner</span>
+          </div>
+          <p class="course-desc">Learn the building blocks of the web. Master HTML tags, CSS styling, and create your first static website.</p>
+          <div class="course-topics">
+            <h3>What you'll learn:</h3>
+            <ul>
+              <li>HTML5 semantic tags</li>
+              <li>CSS selectors and properties</li>
+              <li>Responsive design basics</li>
+              <li>Forms and input validation</li>
+            </ul>
+          </div>
+          <div class="course-meta">
+            <span>4 weeks</span>
+            <span>Beginner-friendly</span>
+          </div>
+          <button class="button primary" onclick="openCourse('html-css')">Start course</button>
+        </article>
+
+        <!-- JavaScript Basics -->
+        <article class="course-card">
+          <div class="course-header">
+            <h2>JavaScript Essentials</h2>
+            <span class="level intermediate">Intermediate</span>
+          </div>
+          <p class="course-desc">Make your websites interactive. Learn variables, functions, DOM manipulation, and modern JavaScript syntax.</p>
+          <div class="course-topics">
+            <h3>What you'll learn:</h3>
+            <ul>
+              <li>Variables, data types, operators</li>
+              <li>Functions and scope</li>
+              <li>DOM manipulation</li>
+              <li>Events and event listeners</li>
+              <li>Async/await basics</li>
+            </ul>
+          </div>
+          <div class="course-meta">
+            <span>6 weeks</span>
+            <span>Interactive lessons</span>
+          </div>
+          <button class="button primary" onclick="openCourse('javascript')">Start course</button>
+        </article>
+
+        <!-- Building Websites -->
+        <article class="course-card">
+          <div class="course-header">
+            <h2>Build Complete Websites</h2>
+            <span class="level intermediate">Intermediate</span>
+          </div>
+          <p class="course-desc">Combine HTML, CSS, and JavaScript to build real, working websites from scratch. Create portfolio projects.</p>
+          <div class="course-topics">
+            <h3>What you'll learn:</h3>
+            <ul>
+              <li>Project planning and structure</li>
+              <li>Building responsive layouts</li>
+              <li>Adding interactive features</li>
+              <li>Navigation and menus</li>
+              <li>Contact forms and validation</li>
+              <li>Deploying your website</li>
+            </ul>
+          </div>
+          <div class="course-meta">
+            <span>8 weeks</span>
+            <span>Real projects</span>
+          </div>
+          <button class="button primary" onclick="openCourse('websites')">Start course</button>
+        </article>
+
+        <!-- Advanced JavaScript -->
+        <article class="course-card">
+          <div class="course-header">
+            <h2>Advanced JavaScript</h2>
+            <span class="level advanced">Advanced</span>
+          </div>
+          <p class="course-desc">Deep dive into modern JavaScript. Learn ES6+, closures, prototypes, and advanced patterns.</p>
+          <div class="course-topics">
+            <h3>What you'll learn:</h3>
+            <ul>
+              <li>ES6+ features (arrow functions, destructuring)</li>
+              <li>Closures and scope chains</li>
+              <li>Prototypes and inheritance</li>
+              <li>Callbacks and promises</li>
+              <li>Async patterns</li>
+            </ul>
+          </div>
+          <div class="course-meta">
+            <span>6 weeks</span>
+            <span>Advanced concepts</span>
+          </div>
+          <button class="button primary" onclick="openCourse('advanced-js')">Start course</button>
+        </article>
+
+        <!-- React Basics -->
+        <article class="course-card">
+          <div class="course-header">
+            <h2>React Fundamentals</h2>
+            <span class="level intermediate">Intermediate</span>
+          </div>
+          <p class="course-desc">Build interactive UIs with React. Learn components, hooks, state management, and modern web apps.</p>
+          <div class="course-topics">
+            <h3>What you'll learn:</h3>
+            <ul>
+              <li>React components</li>
+              <li>JSX syntax</li>
+              <li>Hooks (useState, useEffect)</li>
+              <li>Props and state</li>
+              <li>Component lifecycle</li>
+            </ul>
+          </div>
+          <div class="course-meta">
+            <span>8 weeks</span>
+            <span>Modern frameworks</span>
+          </div>
+          <button class="button primary" onclick="openCourse('react')">Start course</button>
+        </article>
+
+        <!-- Python Programming -->
+        <article class="course-card">
+          <div class="course-header">
+            <h2>Python Programming</h2>
+            <span class="level beginner">Beginner</span>
+          </div>
+          <p class="course-desc">Learn Python from scratch. Perfect for beginners or as a second language. Build real programs.</p>
+          <div class="course-topics">
+            <h3>What you'll learn:</h3>
+            <ul>
+              <li>Python syntax and basics</li>
+              <li>Variables and data types</li>
+              <li>Functions and modules</li>
+              <li>Object-oriented programming</li>
+              <li>File handling</li>
+            </ul>
+          </div>
+          <div class="course-meta">
+            <span>6 weeks</span>
+            <span>Beginner-friendly</span>
+          </div>
+          <button class="button primary" onclick="openCourse('python')">Start course</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Modal for course content -->
+    <div id="courseModal" class="modal">
+      <div class="modal-content">
+        <button class="close" onclick="closeCourse()">&times;</button>
+        <div id="courseBody"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>© 2026 JasonIT. Powered by HaiderIT.</p>
+      <a href="mailto:jasonIT-organization@hotmail.com">Email us</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="courses.js"></script>
+</body>
+</html>
