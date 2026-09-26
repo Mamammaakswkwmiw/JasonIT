@@ -34,7 +34,7 @@
     <section class="courses-section container">
       <div class="courses-grid">
         <!-- HTML & CSS Basics -->
-        <article class="course-card">
+        <article class="course-card" id="html-css">
           <div class="course-header">
             <h2>HTML & CSS Fundamentals</h2>
             <span class="level beginner">Beginner</span>
@@ -57,7 +57,7 @@
         </article>
 
         <!-- JavaScript Basics -->
-        <article class="course-card">
+        <article class="course-card" id="javascript">
           <div class="course-header">
             <h2>JavaScript Essentials</h2>
             <span class="level intermediate">Intermediate</span>
@@ -81,7 +81,7 @@
         </article>
 
         <!-- Building Websites -->
-        <article class="course-card">
+        <article class="course-card" id="websites">
           <div class="course-header">
             <h2>Build Complete Websites</h2>
             <span class="level intermediate">Intermediate</span>
@@ -106,7 +106,7 @@
         </article>
 
         <!-- Advanced JavaScript -->
-        <article class="course-card">
+        <article class="course-card" id="advanced-js">
           <div class="course-header">
             <h2>Advanced JavaScript</h2>
             <span class="level advanced">Advanced</span>
@@ -130,7 +130,7 @@
         </article>
 
         <!-- React Basics -->
-        <article class="course-card">
+        <article class="course-card" id="react">
           <div class="course-header">
             <h2>React Fundamentals</h2>
             <span class="level intermediate">Intermediate</span>
@@ -154,7 +154,7 @@
         </article>
 
         <!-- Python Programming -->
-        <article class="course-card">
+        <article class="course-card" id="python">
           <div class="course-header">
             <h2>Python Programming</h2>
             <span class="level beginner">Beginner</span>
@@ -180,9 +180,9 @@
     </section>
 
     <!-- Modal for course content -->
-    <div id="courseModal" class="modal">
-      <div class="modal-content">
-        <button class="close" onclick="closeCourse()">&times;</button>
+    <div id="courseModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="courseTitle" aria-hidden="true">
+      <div class="modal-content" tabindex="-1">
+        <button class="close" type="button" onclick="closeCourse()" aria-label="Close course">&times;</button>
         <div id="courseBody"></div>
       </div>
     </div>
